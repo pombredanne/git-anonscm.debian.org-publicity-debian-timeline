@@ -11,11 +11,11 @@ Vcs-Browser: https://github.com/lamby/debian-timeline
 
 Package: debian-timeline
 Architecture: all
-Depends: ${misc:Depends}, libjs-simile-timeline
+Depends: libjs-simile-timeline, ${misc:Depends}
 Description: Web-based timeline of the Debian GNU/Linux project
  The Debian Project timeline is a HTML and Javascript-based interactive
  timeline of the Debian GNU/Linux project. It includes the dates of:
- . 
+ .
   * All Debian releases, including point releases and freeze windows
   * Infrastructure changes
   * Conferences and bug-squashing parties
