@@ -4,6 +4,7 @@ debian-timeline (37) UNRELEASED; urgency=low
     - Adrian von Bidder passed away in 2011.
   * wrap-and-sort.
   * Update Vcs-{Git,Browser}. (Closes: #778522)
+  * Bump Debhelper compatibility level to 9.
 
  -- Chris Lamb <lamby@debian.org>  Thu, 16 Oct 2014 02:53:21 +0100
 
