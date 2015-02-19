@@ -5,8 +5,11 @@ Maintainer: Debian publicity team <debian-publicity@lists.debian.org>
 Uploaders:
  Chris Lamb <lamby@debian.org>,
  Paul Wise <pabs@debian.org>
-Build-Depends: debhelper (>= 9)
-Build-Depends-Indep: python, python-debian
+Build-Depends:
+ debhelper (>= 9)
+Build-Depends-Indep:
+ python,
+ python-debian
 Standards-Version: 3.9.5
 Homepage: http://timeline.debian.net/
 Vcs-Git: git://anonscm.debian.org/publicity/debian-timeline.git
@@ -14,7 +17,9 @@ Vcs-Browser: https://anonscm.debian.org/cgit/publicity/debian-timeline.git
 
 Package: debian-timeline
 Architecture: all
-Depends: libjs-simile-timeline, ${misc:Depends}
+Depends:
+ libjs-simile-timeline,
+ ${misc:Depends}
 Description: Web-based timeline of the Debian GNU/Linux project
  The Debian Project timeline is a HTML and Javascript-based interactive
  timeline of the Debian GNU/Linux project. It includes the dates of:
