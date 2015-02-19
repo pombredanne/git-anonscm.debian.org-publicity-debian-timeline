@@ -1,7 +1,10 @@
 Source: debian-timeline
 Section: web
 Priority: optional
-Maintainer: Chris Lamb <lamby@debian.org>
+Maintainer: Debian publicity team <debian-publicity@lists.debian.org>
+Uploaders:
+ Chris Lamb <lamby@debian.org>,
+ Paul Wise <pabs@debian.org>
 Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: python, python-debian
 Standards-Version: 3.9.5
