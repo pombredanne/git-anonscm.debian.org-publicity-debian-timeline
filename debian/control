@@ -9,6 +9,7 @@ Build-Depends:
  debhelper (>= 9)
 Build-Depends-Indep:
  python,
+ python-dateutil,
  python-debian
 Standards-Version: 3.9.6
 Homepage: http://timeline.debian.net/
