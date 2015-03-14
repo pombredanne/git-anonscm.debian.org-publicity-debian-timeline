@@ -20,9 +20,9 @@ Architecture: all
 Depends:
  libjs-simile-timeline,
  ${misc:Depends}
-Description: Web-based timeline of the Debian GNU/Linux project
+Description: Web-based timeline of the Debian Project
  The Debian Project timeline is a HTML and Javascript-based interactive
- timeline of the Debian GNU/Linux project. It includes the dates of:
+ timeline of the Debian Project. It includes the dates of:
  .
   * All Debian releases, including point releases and freeze windows
   * Infrastructure changes
