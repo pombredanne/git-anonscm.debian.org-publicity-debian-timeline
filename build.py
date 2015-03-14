@@ -2,7 +2,6 @@
 
 import os
 import sys
-import shutil
 
 from glob import glob
 from debian import deb822
@@ -19,7 +18,6 @@ def main(dir):
         print >>sys.stderr, "Reading events from %s" % filename,
         input = file(filename).read().decode('utf-8').split('\n')
 
-        obj = deb822.Deb822(input)
         for para in deb822.Deb822.iter_paragraphs(input, use_apt_pkg=False):
             events.appendChild(create_event(doc, para))
             sys.stderr.write('.')
