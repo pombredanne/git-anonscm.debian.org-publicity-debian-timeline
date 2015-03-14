@@ -6,8 +6,8 @@ Source: https://anonscm.debian.org/cgit/publicity/debian-timeline.git/
 Files: *
 Copyright: Chris Lamb <lamby@debian.org> and others
 License: public-domain
- To the extent possible under law, the authors have waived all copyright
- and related or neighboring rights.
+ This software and dataset is hereby placed into the public domain, no rights
+ reserved.
 
 Files: media/debian*.png
 Source: https://www.debian.org/logos/
