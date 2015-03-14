@@ -1,14 +1,26 @@
-Author: Chris Lamb <lamby@debian.org>
-Download: https://anonscm.debian.org/cgit/publicity/debian-timeline.git/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: debian-timeline
+Upstream-Contact: debian-publicity <debian-publicity@lists.debian.org>
+Source: https://anonscm.debian.org/cgit/publicity/debian-timeline.git/
 
 Files: *
-License: Public Domain
+Copyright: Chris Lamb <lamby@debian.org> and others
+License: public-domain
+ To the extent possible under law, the authors have waived all copyright
+ and related or neighboring rights.
 
 Files: media/debian*.png
+Source: https://www.debian.org/logos/
 Copyright: © 1999 Software in the Public Interest
-License: Debian Open Use Logo License
- This logo or a modified version may be used by anyone to refer to the Debian
- project, but does not indicate endorsement by the project.
+License: LGPL-3.0+ or CC-BY-SA-3.0
+ The Debian Open Use Logo(s) are Copyright (c) 1999 Software in the
+ Public Interest, Inc., and are released under the terms of the GNU
+ Lesser General Public License, version 3 or any later version, or,
+ at your option, of the Creative Commons Attribution-ShareAlike 3.0
+ Unported License.
  .
  Note: we would appreciate that you make the image a link to
  https://www.debian.org/ if you use it on a web page.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-3".
