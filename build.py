@@ -7,6 +7,7 @@ from glob import glob
 from debian import deb822
 from xml.dom.minidom import Document
 
+
 def main(dir):
     num = 0
 
@@ -28,6 +29,7 @@ def main(dir):
 
     print '<!-- Generated from %s/* - do not edit -->' % dir
     print events.toprettyxml(indent='  ').encode('utf-8')
+
 
 def create_event(doc, para):
     entry = doc.createElement('entry')
