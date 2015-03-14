@@ -10,7 +10,7 @@ Build-Depends:
 Build-Depends-Indep:
  python,
  python-debian
-Standards-Version: 3.9.5
+Standards-Version: 3.9.6
 Homepage: http://timeline.debian.net/
 Vcs-Git: git://anonscm.debian.org/publicity/debian-timeline.git
 Vcs-Browser: https://anonscm.debian.org/cgit/publicity/debian-timeline.git
