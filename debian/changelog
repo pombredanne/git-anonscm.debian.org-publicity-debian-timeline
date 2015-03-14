@@ -261,15 +261,15 @@ debian-timeline (10) unstable; urgency=low
     where we weren't actually including any event data in the Debian package.
     However, I think the cited bug may be about encodings or excessive
     cross-domain security for file:// protocols.
-    
+ 
     If this is the case, we can do nothing in this package, except point out
     that this is not really supported in all browsers - please configure a
     "real" web server or use:
-    
+ 
       $ cd /usr/share/debian-timeline && python -m SimpleHTTPServer
-    
+ 
     And then visit http://localhost:8000/. (Closes: #588062)
-    
+ 
   * Added:
     - "Archive snapshot service available"
     - "Stefano Zacchiroli elected as DPL"
