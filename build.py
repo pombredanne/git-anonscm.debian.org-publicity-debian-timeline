@@ -78,7 +78,7 @@ def create_event(doc, para):
         entry.setAttribute('start', para['Date'])
 
     if 'Source' in para:
-        text = doc.createTextNode('<a href="%s">Source</a>' % para['Source'])
+        text = doc.createTextNode('<a href="%s" target="debian-timeline-source">Source</a>' % para['Source'])
         entry.appendChild(text)
 
     return entry
