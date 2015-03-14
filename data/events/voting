@@ -16,7 +16,7 @@ Source: https://www.debian.org/News/1997/19970307b
 
 Title: Ian Jackson becomes first DPL
 Date: Dec 01 1997
-Source: http://cvs.infodrom.org/calendar/calendar.infodrom.debian?cvsroot=infodrom
+Source: http://cvs.infodrom.org/calendar/calendar.infodrom.debian?rev=HEAD;content-type=text/plain
 
 Title: DPL 1999 elections
 Start-Date: Dec 02 1998
