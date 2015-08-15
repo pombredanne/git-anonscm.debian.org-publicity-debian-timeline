@@ -1,0 +1,4 @@
+#!/bin/sh
+set -e
+git --work-tree=../build reset --hard master
+make -C ../build install prefix= datadir= DESTDIR=../htdocs
