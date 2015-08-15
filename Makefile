@@ -1,5 +1,6 @@
 prefix ?= /usr/local
 datadir ?= ${prefix}/share/debian-timeline
+symlinks ?= 1
 
 all: build
 
@@ -40,7 +41,12 @@ ${DESTDIR}${datadir}/media/%: media/% ${DESTDIR}${datadir}/media
 	install -m644 -t ${DESTDIR}${datadir}/media $<
 
 ${DESTDIR}${datadir}/media/timeline_%: media/timeline_% ${DESTDIR}${datadir}/media
+	rm --force --recursive ${DESTDIR}${datadir}/$<
+ifeq (1,${symlinks})
 	ln -sf /usr/share/javascript/$(notdir $<) ${DESTDIR}${datadir}/media
+else
+	cp --dereference --recursive $< ${DESTDIR}${datadir}/media
+endif
 
 install: build ${DESTDIR}${datadir} ${INSHTML} ${INSXML} ${INSMEDIA}
 

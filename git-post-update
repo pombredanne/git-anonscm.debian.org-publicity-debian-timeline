@@ -1,5 +1,5 @@
 #!/bin/sh
 set -e
 git --work-tree=../build reset --hard master
-make -C ../build install prefix= datadir= DESTDIR=../htdocs
+make -C ../build install prefix= datadir= DESTDIR=../htdocs symlinks=0
 sudo -u staticsync /usr/local/bin/static-update-component timeline.debian.net
