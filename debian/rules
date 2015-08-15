@@ -1,29 +1,7 @@
 #!/usr/bin/make -f
 
-INPUT	:= $(wildcard data/*)
-OUTPUT	:= $(addsuffix .xml,$(subst data/,xml/,$(basename $(INPUT))))
-
 %:
-	dh $@
+	dh $@ --parallel
 
-override_dh_auto_build: $(OUTPUT)
-	dh_auto_build
-
-xml/%.xml: data/%
-	@mkdir -p xml
-	./build.py $< >$@
-
-gh-pages: $(OUTPUT)
-	git branch -D $@ || true
-	git checkout --orphan $@
-	echo timeline.debian.net > CNAME
-	rm -rf .gitignore debian/ data/
-	cp -rv /usr/share/javascript/timeline_js media
-	cp -rv /usr/share/javascript/timeline_ajax media
-	git add --all .
-	git commit --allow-empty -m "Automatic build for $@"
-	git push -f origin $@
-	git checkout master
-	git branch -D $@
-
-.PHONY: gh-pages
+override_dh_auto_install:
+	dh_auto_install -- prefix=/usr
