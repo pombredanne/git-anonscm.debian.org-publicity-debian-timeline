@@ -2,8 +2,8 @@
 
 import os
 import sys
+import glob
 
-from glob import glob
 from debian import deb822
 from xml.dom.minidom import Document
 from dateutil.parser import parse as date_parse
@@ -18,7 +18,7 @@ def main(dir):
     events = doc.createElement('data')
     doc.appendChild(events)
 
-    for filename in glob(os.path.join(dir, '*')):
+    for filename in glob.glob(os.path.join(dir, '*')):
         if e:
             print >>sys.stderr
         print >>sys.stderr, "Reading events from %s" % filename,
