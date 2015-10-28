@@ -9,7 +9,7 @@ from xml.dom.minidom import Document
 from dateutil.parser import parse as date_parse
 
 
-def main(dir):
+def main(basedir):
     e = []
     error = False
     num = 0
@@ -18,7 +18,9 @@ def main(dir):
     events = doc.createElement('data')
     doc.appendChild(events)
 
-    for filename in glob.glob(os.path.join(dir, '*')):
+    filenames = glob.glob(os.path.join(basedir, '*'))
+
+    for filename in :
         if e:
             print >>sys.stderr
         print >>sys.stderr, "Reading events from %s" % filename,
@@ -62,7 +64,7 @@ def main(dir):
         return 1
     print >>sys.stderr, "Writing %s events" % num
 
-    print '<!-- Generated from %s/* - do not edit -->' % dir
+    print '<!-- Generated from %s/* - do not edit -->' % basedir
     print events.toprettyxml(indent='  ').encode('utf-8')
 
 
