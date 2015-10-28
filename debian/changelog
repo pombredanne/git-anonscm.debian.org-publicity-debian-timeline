@@ -8,6 +8,7 @@ debian-timeline (37) UNRELEASED; urgency=low
   * Add libjs-simile-timeline to Build-Depends now that we symlink it.
   * Import glob as a top-level.
   * Don't clobber builtin dir.
+  * Make the build reproducible.
 
  -- Chris Lamb <lamby@debian.org>  Thu, 16 Oct 2014 02:53:21 +0100
 

@@ -20,7 +20,7 @@ def main(basedir):
 
     filenames = glob.glob(os.path.join(basedir, '*'))
 
-    for filename in :
+    for filename in sorted(filenames):
         if e:
             print >>sys.stderr
         print >>sys.stderr, "Reading events from %s" % filename,
