@@ -8,6 +8,7 @@ Uploaders:
 Build-Depends:
  debhelper (>= 9)
 Build-Depends-Indep:
+ libjs-simile-timeline,
  python,
  python-dateutil,
  python-debian
